@@ -8,6 +8,8 @@ def check_correct_database(connection):
     cursor = connection.cursor()
     cursor.execute("SELECT DATABASE();")
     current_db = cursor.fetchone()[0]
+     USE alx_book_store;
+SHOW TABLES;
 
     if current_db == "alx_book_store":
         print("✅ Correct database selected: alx_book_store")
